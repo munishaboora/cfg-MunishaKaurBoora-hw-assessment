@@ -47,7 +47,7 @@ def validate_pin(pin_code):
             else:
                 break
         if incorrect_pin_count == 3:
-            raise ValueError("Incorrect pin entered 3 times. Maximum limit reached.")
+            raise ValueError
 
 
 correct_pin = False
@@ -88,4 +88,25 @@ else:
 
 """TASK 3 (Testing)"""
 #Question 1
+'''
+ - I have refactored the code in task 2 and changed the names of the functions, from validate_available_balance and validate_pin, to validating_available_balance and validating_pin respectively.
+    - I've used the original code within the the validate_available_balance function and added an else statement with a return statement so that
+ - Please refer to the testing_balance.py file for the unit tests corresponding to the validating_available_balance() function.
+ - Please refer to the testing_pin.py file for the unit tests corresponding to the validating_pin() function.
+ 
+'''
 
+def validating_available_balance(withdrawal_amount):
+    account_balance = 100
+    if withdrawal_amount > account_balance:
+        return "Insufficient funds available."
+    else:
+        return "Sufficient funds available."
+
+def validating_pin(pin_code):
+    correct_pin_code = 1234
+
+    if pin_code != correct_pin_code:
+        return "Please enter your pin code again."
+    else:
+        return "Correct pin entered"
