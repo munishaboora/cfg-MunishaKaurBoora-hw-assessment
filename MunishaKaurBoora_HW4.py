@@ -3,23 +3,27 @@
 ###Question 1###
 """
 GIT WORKFLOW FUNDAMENTALS
-· Working Directory - 
-· Staging Area - 
-· Local Repo (head) - 
-· Remote repo (master) - 
+· Working Directory - also known as working tree, consists of the files that one is currently working on i.e. one's project folder.
+· Staging Area - The staging area is a file which is generally contained in your Git directory. The file stores information regarding what goes into your next commit. 
+· Local Repo (head) - a Git repository that is stored on one's computer. When working with Git, only one branch can be checked out at a time - and this is what's called the 'HEAD' branch. 
+· Remote repo (master) - a repository which is stored in a server. The default branch name in Git is master, however, GitHub renamed the master branch to main for any Git repository.
 
 WORKING DIRECTORY STATES:
-· Staged - 
-· Modified - 
-· Committed - 
+· Staged - means that one has marked a modified file, in its current version, to go into the next commit snapshot.
+· Modified - means that you have changed a file but not yet committed it to your database.
+· Committed - a file that is committed is that has the changes made to it safely stored in a snapshot in the Git directory. To commit a file, one uses the git commit command.
 
 GIT COMMANDS:
-· Git add - 
-· Git commit - 
-· Git push - 
-· Git fetch - 
-· Git merge - 
-· Git pull - 
+· Git add - adds new or altered files, that are in your working directory, to the staging area. 
+     - For example, git add [filename] selects a specific file, and moves it to the staging area, for inclusion in the next commit. 
+     - git add., on the other hand, stages all files in the entire repository (provided that they are not listed in the .gitignore file).
+· Git commit - provides a snapshot of one's repository (project) at a specific time.
+     - For example, git commit only starts the commit process.
+     - git commit -m "Enter message here" both starts the commit process and allows the inclusion of a  commit message.
+· Git push - uploads all local branch commits to the corresponding remote branch.
+· Git fetch - git fetch [remote] fetches changes from the remote, but does not update tracking branches.
+· Git merge - git merge [branch] joins the specified branch into one's current branch.
+· Git pull - updates one's present local working branch, and all remote tracking branches too. 
 """
 
 
