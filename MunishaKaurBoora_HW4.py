@@ -31,8 +31,8 @@ GIT COMMANDS:
 """TASK 2 (Exception Handling)"""
 ###Question 1###
 #Task 1
-correct_pin_code = 1234
-pin_code = int(input("Please enter your pin code."))
+# correct_pin_code = 1234
+# pin_code = int(input("Please enter your pin code."))
 
 #Task 2
 # def validate_pin(pin_code):
@@ -66,7 +66,7 @@ pin_code = int(input("Please enter your pin code."))
 #         print("Card blocked.")
 
 #Task 3
-account_balance = 100
+# account_balance = 100
 
 #Tasks 4 - 7
 # account_balance = 100
@@ -90,10 +90,12 @@ account_balance = 100
 #Question 1
 '''
  - I have refactored the code in task 2 and changed the names of the functions, from validate_available_balance and validate_pin, to validating_available_balance and validating_pin respectively.
-    - I've used the original code within the the validate_available_balance function and added an else statement with a return statement so that
+    - I've used the original code within the the validate_available_balance function and included the account_balance variable within the function. I've also added an else statement with a return statement, and a retrun sgtaement in place of the raise statement so that I am able to test the code.
+ - In addition to testing the two refactored functions, I've also tested the original function validate_pin. The only alterations I've made to the validate_pin fucntion below is the addtion of a return statement and the pin_code variable which requests a pin from the user. 
+
  - Please refer to the testing_balance.py file for the unit tests corresponding to the validating_available_balance() function.
  - Please refer to the testing_pin.py file for the unit tests corresponding to the validating_pin() function.
- 
+ - Please refer to the testing_pin_original_function.py file for the unit tests corresponding to the validate_pin() function.
 '''
 
 def validating_available_balance(withdrawal_amount):
@@ -110,3 +112,19 @@ def validating_pin(pin_code):
         return "Please enter your pin code again."
     else:
         return "Correct pin entered"
+
+def validate_pin(pin_code):
+    correct_pin_code = 1234
+
+    pin_code = int(input("Please enter your pin code."))
+    if pin_code != correct_pin_code:
+        incorrect_pin_count = 1
+        for num in range(2):
+            pin_code = int(input("Please enter your pin code again."))
+            if pin_code != correct_pin_code:
+                incorrect_pin_count += 1
+            else:
+                return "Correct pin entered."
+        if incorrect_pin_count == 3:
+            raise ValueError
+
