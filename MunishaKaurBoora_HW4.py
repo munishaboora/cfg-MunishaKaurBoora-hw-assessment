@@ -32,23 +32,23 @@ GIT COMMANDS:
 """TASK 2 (Exception Handling)"""
 ###Question 1###
 #Task 1
-correct_pin_code = 1234
-pin_code = int(input("Please enter your pin code."))
+# correct_pin_code = 1234
+# pin_code = int(input("Please enter your pin code."))
 
 #Task 2
-def validate_pin(pin_code):
-    correct_pin_code = 1234
-
-    if pin_code != correct_pin_code:
-        incorrect_pin_count = 1
-        for num in range(2):
-            pin_code = int(input("Please enter your pin code again."))
-            if pin_code != correct_pin_code:
-                incorrect_pin_count += 1
-            else:
-                break
-        if incorrect_pin_count == 3:
-            raise ValueError
+# def validate_pin(pin_code):
+#     correct_pin_code = 1234
+#
+#     if pin_code != correct_pin_code:
+#         incorrect_pin_count = 1
+#         for num in range(2):
+#             pin_code = int(input("Please enter your pin code again."))
+#             if pin_code != correct_pin_code:
+#                 incorrect_pin_count += 1
+#             else:
+#                 break
+#         if incorrect_pin_count == 3:
+#             raise ValueError
 '''
 - The function above validates whether an individual has entered the correct pin code. 
 - If the pin code is entered incorrectly, the variable incorrect_pin_count is set equal to 1. 
@@ -57,20 +57,20 @@ def validate_pin(pin_code):
    - However, if the pin code is entered incorrectly once or twice to begin with, and then entered correctly on the second or third attempt, the loop is exited.
 '''
 
-correct_pin = False
-try:
-    pin_code = int(input("Please enter your pin code."))
-    validate_pin(pin_code)
-except ValueError:
-    print("Incorrect pin code entered 3 times.")
-else:
-    correct_pin = True
-    print("Correct pin code entered.")
-finally:
-    if correct_pin:
-        print("Please select your desired operation:")
-    else:
-        print("Card blocked.")
+# correct_pin = False
+# try:
+#     pin_code = int(input("Please enter your pin code."))
+#     validate_pin(pin_code)
+# except ValueError:
+#     print("Incorrect pin code entered 3 times.")
+# else:
+#     correct_pin = True
+#     print("Correct pin code entered.")
+# finally:
+#     if correct_pin:
+#         print("Please select your desired operation:")
+#     else:
+#         print("Card blocked.")
 
 '''
 - In tasks 2, I've used the try block to test the block of code for errors, the except block to handle the error, the else block to execute code when there is no error, and the finally block to execute code regardless of the result of the try and except blocks.
@@ -80,23 +80,23 @@ finally:
 '''
 
 #Task 3
-account_balance = 100
+# account_balance = 100
 
 #Tasks 4 - 7
 account_balance = 100
-def validate_available_balance(withdrawal_amount):
-    if withdrawal_amount > account_balance:
-        raise ValueError("Insufficient funds available.")
-
-try:
-    withdrawal_amount = int(input("Please enter withdrawal amount."))
-    validate_available_balance(withdrawal_amount)
-except ValueError:
-    print("Please either deposit funds into your account or withdraw a lesser amount.")
-else:
-    account_balance -= withdrawal_amount
-    print(f"Remaining balance: £{account_balance}")
-    print("Please take your cash with you.")
+# def validate_available_balance(withdrawal_amount):
+#     if withdrawal_amount > account_balance:
+#         raise ValueError("Insufficient funds available.")
+#
+# try:
+#     withdrawal_amount = int(input("Please enter withdrawal amount."))
+#     validate_available_balance(withdrawal_amount)
+# except ValueError:
+#     print("Please either deposit funds into your account or withdraw a lesser amount.")
+# else:
+#     account_balance -= withdrawal_amount
+#     print(f"Remaining balance: £{account_balance}")
+#     print("Please take your cash with you.")
 '''
 - In tasks 4-7, I've used the try block to test the block of code for errors, the except block to handle the error and, the else block to execute code when there is no error.
 - Initially, the try block will take an input from the user and test the validate_available_balance function for errors. 
@@ -118,29 +118,29 @@ else:
  - Please refer to the testing_pin_original_function.py file for the unit tests corresponding to the validate_pin() function.
 '''
 
-def validating_available_balance(withdrawal_amount):
-    account_balance = 100
-    if withdrawal_amount > account_balance:
-        return "Insufficient funds available."
-    else:
-        return "Sufficient funds available."
+# def validating_available_balance(withdrawal_amount):
+#     account_balance = 100
+#     if withdrawal_amount > account_balance:
+#         return "Insufficient funds available."
+#     else:
+#         return "Sufficient funds available."
+#
+# def validating_pin(pin_code):
+#     correct_pin_code = 1234
+#
+#     if pin_code != correct_pin_code:
+#         return "Please enter your pin code again."
+#     else:
+#         return "Correct pin entered"
 
-def validating_pin(pin_code):
+def validate_pin(mock_input):
     correct_pin_code = 1234
 
-    if pin_code != correct_pin_code:
-        return "Please enter your pin code again."
-    else:
-        return "Correct pin entered"
-
-def validate_pin(pin_code):
-    correct_pin_code = 1234
-
-    pin_code = int(input("Please enter your pin code."))
+    pin_code = mock_input[0]
     if pin_code != correct_pin_code:
         incorrect_pin_count = 1
-        for num in range(2):
-            pin_code = int(input("Please enter your pin code again."))
+        for num in range(1,3):
+            pin_code = mock_input[num]
             if pin_code != correct_pin_code:
                 incorrect_pin_count += 1
             else:
