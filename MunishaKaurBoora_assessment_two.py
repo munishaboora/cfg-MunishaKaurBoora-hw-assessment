@@ -185,7 +185,6 @@ print(sum_of_list([2, 2, 3], 5))
 print(sum_of_list([2, 2, 3, 23, 9, 11], 20))
 print(sum_of_list([2, 2, 3], 10))
 
-
 """
 Explanation for the function above:
 - I have created a function called sum_of_list and passed it the parameters numbers_list and target_sum to act as placeholders for a list and a target sum respectively.
