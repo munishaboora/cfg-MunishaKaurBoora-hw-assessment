@@ -10,6 +10,7 @@ A process is a program whilst it is in execution, in other words, a set of instr
 
 3.
 Caches are used to temporarily store instructions and data that are likely to be reused by the central processing unit. This itself enables faster processing by the central processing unit.
+
 4.
 A thread is a small sequence of programmed instructions designed to be scheduled and executed by the central processing unit.
 Multithreading enables multiple threads to be executed simultaneously. These multiple threads can perform different tasks in a single program.
@@ -28,10 +29,11 @@ Differences:
 7.
 DRY stands for 'don't repeat yourself'. The 'dont repeat yourself' principle aims to reduce the repetition of patterns and code duplication within one's work to avoid redundancy.
 KISS stands for 'keep it simple stupid'. The 'keep it simple stupid' principle states that one should keep their code simple and avoid unnecessaruy complexity, resulting in code that is both easier to understand and maintain.
-BDUF stands for 'big design up front'. the ‘Big Design Up Front’ principle states that one should spend more time designing the application before moving on to writing one's first line of code.
+BDUF stands for 'big design up front'. The ‘Big Design Up Front’ principle states that one should spend more time designing an application before moving on to writing the first line of code for the application.
+
 8.
 In general, a garbage collector is a piece of software that automatically manages memory.
-When it comes to python, Garbage collection is performed automatically. Python deletes unwanted objects automatically to free up memory space.
+When it comes to python, garbage collection is performed automatically. Python deletes unwanted objects automatically to free up memory space.
 Python's garbage collector runs during a program's execution and it is triggered when an objects reference count reaches zero.
 
 9.
@@ -42,7 +44,7 @@ A livelock is a condition which occurs when a request for an exclusive lock is c
 
 10.
 Flask is a backend framework written in python. Flask is used to build web applications.
-Flask is beneficial because it provides one with tools, libraries nd technologies that allow one to build a web application.
+Flask is beneficial because it provides one with tools, libraries and technologies that allow one to build a web application.
 
 """
 
@@ -51,20 +53,16 @@ Flask is beneficial because it provides one with tools, libraries nd technologie
 Question 2 (8 points)
 Some key difference between python 2 and python 3 are: the print function, the storage of strings, the division of integers, iteration and exceptions.
 In python 2 print is considered a keyword, print "hello". In Python 3 print is considered a function, print("Hi").
-In python 2 strings are stored as ASCII by default. In Python 3 strings are stored as UNICODE.
+In python 2 strings are stored as ASCII by default. In Python 3 strings are stored as UNICODE by default.
 In python 2 when two integers are divided, an integer value is always returned. In Python 3 when two integers are divided, a floating-point value is always returned.
 In python 2 the xrange() function is used for iterations. In Python 3, the range() function was introduced to perform iterations.
 In python 2, exceptions are enclosed in notations. In Python 3, exceptions are enclosed in parentheses.
-
-
-
-
 """
 
 
 """
 Question 3 (8 points)
-Note: for this question I have assumed that I was required to return True or False as an output and that an individual would only pass a string to the function.
+Note: for this question I have assumed that I was required to return True or False as an output and that an individual would only pass a string to the function rather than, for instance, a list of multiple strings.
 """
 def is_palindrome(word):
     reversed_word = word[::-1]
@@ -74,21 +72,21 @@ def is_palindrome(word):
 print(is_palindrome('hannah'))
 print(is_palindrome('bobby'))
 
+
 """
 Question 4 (8 points)
-For this question, I would typically create a separate file to perform tests in. Within the separate file, I would write the below code.
-For the is_palindrome() fucntion, I have decided to perform two different unit tests. I have performed one unit test where the word is not a palindrome to dertermine if the correct output of False is returned.
-I have also performed one unit test where the word is a palindrome to determine if the correct output of True is returned.
+For this question, I would typically create a separate file to write the code for the unit tests. Within the separate file, I would write the exact code I've written below. The test file would typically be in the same folder as the file containing the function to be tested.
+For the is_palindrome() function, I have decided to perform two different unit tests:
+   - I have performed one unit test where the word in the string passed to the function is not a palindrome to dertermine if the correct output of False is returned.
+   - I have also performed one unit test where the word in the string passed to the function is a palindrome to determine if the correct output of True is returned.
 """
-from unittest import TestCase, main
-from MunishaKaurBoora_assessment_two import is_palindrome
 
 from unittest import TestCase, main
 from MunishaKaurBoora_assessment_two import is_palindrome
 
 
 class TestPalindrome(TestCase):
-    def test_palindrome_word_one(self):
+    def test_palindrome_word(self):
         expected = True
         result = is_palindrome(word='bob')
         self.assertEqual(expected, result)
@@ -104,36 +102,28 @@ if __name__ == "__main__":
 
 """
 Question 5 (8 points)
-Agile teams take part in requirement meetings, architecture and design meetings, test and feedback meetings, and development meetings.
-Requirement meeting: the objective of a requirement meeting is to discuss the project requirements with the main stakeholders of the project. The stakeholders can be the projects owner, individuals using the tool, a subject matter expert, etc.
-   - In this stage of a project, the development team would be highly involved as they would need to take in the information from the meeting to determine what is actually required of them. 
-   - In this stage the person requiring the project to be completed, the project owner, may not have the required skillset to design and build the project themselves, making this stage crucial.
+Agile teams take part in: requirement meetings, architecture and design meetings, test and feedback meetings, and development meetings.
+Requirement meeting: the objective of a requirement meeting is to discuss the project's requirements with the main stakeholders of the project. The stakeholders of a project can be the projects owner, individuals using the software to be created, a subject matter expert, etc.
+   - In this meeting of a project, the development team would be highly involved as they would need to take in the information from the meeting to determine what is actually required of them. 
+   - In this meeting, the person requiring the project to be completed, the project owner, may not have the required skillset to design and build the project themselves, making this stage crucial to get their requirements across clearly to the developers.
 Architecture and design meeting: in this meeting developers begin to design the software.
    - Within an agile environment, one may quickly design and create something to use as a starting point for future prototypes.
-   - Within this meeting, developers may use various tools such as miro to come up with potential project designs.
-   - One may also decide on the file structure of the project, i.e. splitting it up into smaller managable components.
+   - Within this meeting, developers may use various tools such as miro to come up with potential project designs. Miro can be used to design mobile apps or even to flesh out ideas as a team.
+   - One may also decide on the file structure of the project, for instance splitting it up into smaller managable components (typically one function per file used).
 Test and feedback meeting:   
-   - This stage involves ensuring that the software works as intended. 
-   - One may perform unit testing on for instance functions within the code, regression testing to determine if other aspects of the project have been affected by changing one aspect of the project's code, or even user acceptance testing where users acually use the software.
-         
-
-
+   - This stage involves ensuring that the software works as intended and if it does not, it may result in reverting to previous stages within the software development life cyle. 
+   - One may perform unit testing on for instance functions within the code, regression testing to determine if other aspects of the project have been affected by changing one aspect of the project's code, or even user acceptance testing where users acually use the software to test it.
 
 """
-
-
-
-
-
 
 """
 Question 6 (8 points)
 try: the code in the try block is run and if the code executes as intended, the else statement is executed. If the code doesnt execute as intended then the except block is executed.
-except: the code in the except block is executed is there is an exception.
+except: the code in the except block is executed is there is an exception i.e. if the code in the try block doesnt execute as intended.
 else: the code in the else block is executed if there is no exception.
 finally: the code in the finally block is executed no matter what - exception or no exception. 
 
-The try/except/else/finally block is used to deal with potential errors in one's code. For instance when trying to withdraw money from a cashpoint without having a sufficiently high balance, an error would be thrown when one attempts to withdraw more money than is in one's account.
+The try/except/else/finally block is used to deal with potential errors in one's code. For instance when trying to withdraw money from a cashpoint without having sufficient funds. In such a situation, one would use exception handling to throw an error when one attempts to withdraw more money than is in one's account.
 """
 # Example for question 6:
 def is_palindrome(word):
@@ -151,11 +141,7 @@ In order to connect a python program with a database such as MySQL, we would fir
 Python cannot connect directly to a database, in order to do this it needs something called a database engine - also known as a driver or connector. We would have to install the connector.
 Once we are able to connect to a database, we are returned something called a cursor. We are able to pass this cursor SQL syntax that it will execute.
 In order to fetch /insert data into a database from a python program, we must also have defined the routes we are to use. Within these routes, we can define functions that perform certain actions such as adding or removing data from SQL.
-
-
-
-
-
+We can test the successful insertion of data into a database using alternative software such as postman. This is because such actions would require a PUT request which is not visible in the browser using one's local host url.
 """
 
 
@@ -163,6 +149,7 @@ In order to fetch /insert data into a database from a python program, we must al
 
 """
 Question 8 (10 points)
+
 SELECT 
     a.author_name AS 'Author Name',
     SUM(b.sold_copies) AS 'Copies Sold'
@@ -207,7 +194,7 @@ Explanation for the function above:
    - Within the for loop, I've created a variable called required_number, representing the number that would need to be added to an element in the original list to reach the target sum.
    - I've also created three additional variables first_half_of_list, second_half_of_list and concatenated_list. These variables will be used form a list consisting of all elements of the original list excluding the present value in the for loop.
    - I've used an if statement to determine whether or not the required number is in the new list, concatenated_list. 
-      - If the value is present in the new list, both the required number and present value in the loop are added to the empty list stored in final_list. After this the for loop is exited and the list stored in final_list is returned.
+      - If the value is present in the new list, both the required number and present value in the loop are added to the empty list stored in final_list. After this, the for loop is exited and the list stored in final_list is returned.
       - If the value is not present in the new list, the loop continues to iterate over the remaining elements in the original list until either two values adding to give the target sum are found or until the loop ends.
 """
 
