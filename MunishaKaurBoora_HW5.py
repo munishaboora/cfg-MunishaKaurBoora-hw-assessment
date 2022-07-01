@@ -96,12 +96,14 @@ Main considerations:
 - How the booking system would deal with multiple people attempting to book tickets simultaneously (as would be the case for the release of a popular film).
 - How would the available seats be displayed to a user - would all seats be displayed, each with respective their availability status, or would only the available seats be displayed?
 - What will the UI look like?
+- Do we need to support both web apps and mobile apps.
 
 Common or biggest problems:
 - Booking tickets and not receiving confirmation of the booking
 - Users accidentally inputting the wrong data e.g email address.
 - Users not wanting to use the website because they dont like the user interface.
 - The website taking a long time to load, leading to the user becoming frustrated.
+- How many options should be displayed to the user when selecting films (a lot would be hard to display)
 
 Components or tools I would use:
 - For the cinema booking system, I would use a strategy design pattern as it requires choosing a specific implementation of an algorithm or task at run time – out of multiple other implementations for same task.
