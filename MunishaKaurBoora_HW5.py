@@ -88,7 +88,7 @@ Key requirements:
 - A database to store a user's name, surname, email address, available films, the times that each film is showing, the various ticket prices, etc.
 - A user interface that makes booking cinema tickets fast and simple (should be faster and less cumbersome than booking tickets in person).
 - The framework to build the user interface and connect to the database.
-- The ability for the booking system to accept payment from the user and valid that payment is possible.
+- The ability for the booking system to accept payment from the user and valid that payment is possible (the payment validation component could be external).
 
 Main considerations:
 - Will the booking system be used for one cinema or multiple cinemas operating under a particular brand or region?
