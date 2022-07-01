@@ -73,19 +73,42 @@ User stories:
 - Each sprint would last two weeks. A sprint is a short period of time when a scrum team works to complete a set amount of work.
 - Each sprint would start with a sprint planning meeting - this would be conducted before every sprint and would be attended by the scrum master, the development team and the product owner. 
    - These individuals would all select the high priority items from the product backlog in such a way that the development team can deliver them in one single sprint. The list of selected items is known as the sprint backlog. The development team works on the sprint backlog throughout the sprint.
-
 - During the sprint, every day, a daily scrum meeting is held. In this meeting each participant would answer 3 questions: what they did yesterday, what they'll do today, and the issues facing by the developers.
 - The outcome of the sprint would be a potentially shippable product. Whether or not the product is ready to be shipped depends on whether the product owner wants to ship the product or add more features to the product.
 - Finally, after the sprint has taken place, the sprint review and sprint retrospective occur.
    - In the sprint review, the scrum team would showcase what it has accomplished during the sprint, this may include a demo of new features added to the product.
    - In the sprint retrospective, the team contemplate on what went well, what went badly and what could be improved. The objective of a sprint retrospective is to improve the sprints held in the future.
-
-# Requirements meeting:
-# Architecture and design:
-# Developmemt:
-# Test and feedback
 """
-
 
 """TASK 2 (Process Flow Design)"""
 ###Question 1###
+
+"""
+Key requirements:
+- A database to store a user's name, surname, email address, available films, the times that each film is showing, the various ticket prices, etc.
+- A user interface that makes booking cinema tickets fast and simple (should be faster and less cumbersome than booking tickets in person).
+- The framework to build the user interface and connect to the database.
+- The ability for the booking system to accept payment from the user and valid that payment is possible.
+
+Main considerations:
+- Will the booking system be used for one cinema or multiple cinemas operating under a particular brand or region?
+- The options available for storing the data e.g Informix, MySQL, MongoDB, etc.
+- How the booking system would deal with multiple people attempting to book tickets simultaneously (as would be the case for the release of a popular film).
+- How would the available seats be displayed to a user - would all seats be displayed, each with respective their availability status, or would only the available seats be displayed?
+- What will the UI look like?
+
+Common or biggest problems:
+- Booking tickets and not receiving confirmation of the booking
+- Users accidentally inputting the wrong data e.g email address.
+- Users not wanting to use the website because they dont like the user interface.
+- The website taking a long time to load, leading to the user becoming frustrated.
+
+Components or tools I would use:
+- For the cinema booking system, I would use a strategy design pattern as it requires choosing a specific implementation of an algorithm or task at run time – out of multiple other implementations for same task.
+- For the website design, I would use react js (is a JavaScript library for building user interfaces).
+   - I would use React because it is all about splitting an application into small building blocks, where every building block, every component, has a clear task and therefore one's code stays maintainable and manageable.
+- I would use the Django python web framework.
+   - I would use Django as it is well known to be a high-performing web framework out of the box and it is used by extremely high-traffic apps. This framework would help deal with the issue of alot of users attempting to book cinema tickets.
+   
+- Please refer to the picture for the process flow design.   
+"""
