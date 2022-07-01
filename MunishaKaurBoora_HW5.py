@@ -57,16 +57,35 @@ SCRUM ROLES
 ###Question 2###
 """
 User stories:
-- 
-- 
-- 
+- As a yoga enthusiast, I want to be able to book yoga classes online in advance, so that I accidentally turn up to a full class again.
+- As the owner of the yoga studio, I want to be able to access all data related to bookings, appointments, schedules etc, so that I know how my studio is performing.
+- As someone that is new to yoga, I want to be able to see all of the yoga studio's essential information clearly on the website, so that I can make in informed decision regarding whether or not I'd like to attend a yoga session.
 
-Requirements:
-Architecture and design:
-Developmemt:
-Test and feedback
+-> The first user story above essentially requires the ability for a user to be able to book classes online. 
+-> The second user story above requires the yoga studio owner to be able to access either some sort of a summary of the data stored in the SQL database or all of the data stored in the SQL database. 
+-> The third user story a simple requires a simple view of the data stored in the SQL database without overwhelming the individual.
 
+- As one can start writing the code for the backend or the frontend of a software in any order, all tasks above can be completed simultaneously, by three separate individuals in the development team.
+
+- To build a simple prototype of new yoga booking system, I would follow the agile methodology because it helps analyse and improve products whilst they’re going through different phases of development. 
+   - This methodology enables one to produce more valuable products to customers by following an incremental approach.
+   
+- Each sprint would last two weeks. A sprint is a short period of time when a scrum team works to complete a set amount of work.
+- Each sprint would start with a sprint planning meeting - this would be conducted before every sprint and would be attended by the scrum master, the development team and the product owner. 
+   - These individuals would all select the high priority items from the product backlog in such a way that the development team can deliver them in one single sprint. The list of selected items is known as the sprint backlog. The development team works on the sprint backlog throughout the sprint.
+
+- During the sprint, every day, a daily scrum meeting is held. In this meeting each participant would answer 3 questions: what they did yesterday, what they'll do today, and the issues facing by the developers.
+- The outcome of the sprint would be a potentially shippable product. Whether or not the product is ready to be shipped depends on whether the product owner wants to ship the product or add more features to the product.
+- Finally, after the sprint has taken place, the sprint review and sprint retrospective occur.
+   - In the sprint review, the scrum team would showcase what it has accomplished during the sprint, this may include a demo of new features added to the product.
+   - In the sprint retrospective, the team contemplate on what went well, what went badly and what could be improved. The objective of a sprint retrospective is to improve the sprints held in the future.
+
+# Requirements meeting:
+# Architecture and design:
+# Developmemt:
+# Test and feedback
 """
+
 
 """TASK 2 (Process Flow Design)"""
 ###Question 1###
