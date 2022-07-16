@@ -1,8 +1,13 @@
 #### 1. How does Object Oriented Programming differ from Process Oriented Programming?
 
-Object Oriented Programming is ...
+- Object Oriented Programming is ...
+   - Describe OOP
+   - Example of OOP x 2
+   - Explain example 
+- Process Oriented Programming is ...
 
 #### 2. What's polymorphism in OOP?
+- Describe polymorphism and provide 2 examples ...
 
 
 #### 3. What's inheritance in OOP?
