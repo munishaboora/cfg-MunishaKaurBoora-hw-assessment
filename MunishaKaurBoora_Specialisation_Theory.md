@@ -1,5 +1,6 @@
 ### 1. How does Object Oriented Programming differ from Process Oriented Programming?
 
+Object Oriented Programming is ...
 
 ### 2. What's polymorphism in OOP?
 
