@@ -171,6 +171,7 @@ class CFGStudent(Student):
         print(f"Subjects and grades in {self.name}'s database:")
         for subject in list_of_subjects:
             subject_grade = self.subjects.get(subject)
+
             print(f"{subject}: {subject_grade}")
 
     def calculate_overall_mark(self):
@@ -183,6 +184,7 @@ class CFGStudent(Student):
             overall_grades_total += self.subjects.get(subject)
 
         overall_grades_average = round(overall_grades_total / number_of_subjects)
+
         print(f"{self.name}'s overall average grade: {overall_grades_average}")
 
 
@@ -201,7 +203,7 @@ sarah.show_all_subjects()
    #Code to show and calculate average mark
 sarah.calculate_overall_mark()
 
-   #Code to remove a subject and its corresponding grade
+   #Code to remove a subject and its corresponding grade and then verify that it has been removed
 sarah.remove_subject_and_grade('Homework 1')
 sarah.show_all_subjects()
 
@@ -219,7 +221,7 @@ jasmine.show_all_subjects()
    #Code to show and calculate average mark
 jasmine.calculate_overall_mark()
 
-   #Code to remove a subject and its corresponding grade
+   #Code to remove a subject and its corresponding grade and then verify that it has been removed
 jasmine.remove_subject_and_grade('Homework 4')
 jasmine.show_all_subjects()
 
@@ -256,5 +258,4 @@ Explanation for code above:
 
 - Below the class, I've created two new object instances of the CFGStudent class. The code for this is 'sarah = CFGStudent('Sarah', 23, 24)' and 'jasmine = CFGStudent('Jasmine', 27, 4)'.
       - I've then called the various methods within the CFGStudent class to test that the methods do indeed work. I have done this for the two different students.
-
 """
