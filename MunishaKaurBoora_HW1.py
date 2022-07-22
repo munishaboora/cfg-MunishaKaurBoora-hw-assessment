@@ -97,9 +97,9 @@ Explanation for code above:
       - Within the add_item class method, I've used the .update() method to update the dictionary of all items in the __init__ function with the key:value pair passed to the add_item class method.
       - Within the add_item class method, I've created the variables: item_price, formatted_item_price and item_description. item_price stores the value of the single key:value pair passed to the add_item class method. formatted_item_price is used to format the value stored in item_price to two decimal places. item_description stores the key of the single key:value pair passed to the add_item class method.
       - In the following line of code, I've added the value stored in the item_price variable to the overall total in the __init__ function.
-      - Finally, I've used print statements to display the item's description and the formatted price.
+      - Finally, I've used print statements to display the item's description and the formatted price in the console.
 
-- To the remove_item class method, I passed item_to_remove, and discount_percentage_applied_to_transaction as parameters. item_to_remove allows one to specify the key of the item to be removed from the transaction. discount_percentage_applied_to_transaction allows the correct amount to be deducted from total_price in the __init__ function - the discount percentage passed to the remove_item class method would depend on whether or not discount had been applied to a transaction to begin with. 
+- To the remove_item class method, I passed item_to_remove and discount_percentage_applied_to_transaction as parameters. item_to_remove allows one to specify the key of the item to be removed from the transaction. discount_percentage_applied_to_transaction allows the correct amount to be deducted from total_price in the __init__ function - the discount percentage passed to the remove_item class method would depend on whether or not discount had been applied to a transaction to begin with. 
       - Within the remove_item class method, I've created a variable called removed_item_price and used the .get() method to return the value of the key that will be passed to the remove_item method.
       - Within the remove_item class method, I've created a variable called removed_item_price_after_discount to store the item's price after the discount percentage passed to the remove_item class method has been applied.
       - Within the remove_item class method, I've created a variable called formatted_removed_item_price to format the value stored in removed_item_price_after_discount to two decimal places.
@@ -107,7 +107,7 @@ Explanation for code above:
       - In the following two lines of code, I have used the .pop() method to remove the key-value pair of the specified key from the dictionary in the __init__ function. I have then deducted the removed item's price from the overall total in the __init__ function.
       - Finally, I've used print statements to display the removed item's description and the removed item's formatted price.
  
-- To the apply_discount class method, I passed discount_percentage as a parameter. discount_percentage allows the discount percentage to be passed to the apply_discount class method so that a discount can be applied to the overall trnasaction.
+- To the apply_discount class method, I passed discount_percentage as a parameter. discount_percentage allows a discount percentage to be passed to the apply_discount class method so that a discount can be applied to the overall transaction.
       - Within the apply_discount class method, I've amended the discount in the __init__ function based on the percentage passed to the apply_discount class method.
       - I've also adjusted the overall total in the __init__ function so that the overall total suggests that a discount has been applied.
       - Within the apply_discount class method, I've created a variable called discounted_total which I set equal to the overall total in the __init__ function as I felt that the variable name discounted_total was more clear.
@@ -115,7 +115,7 @@ Explanation for code above:
       - Finally, I've used print statements to display the discount percentage and the overall total after discount.
 
 - Explanation of the get_total class method:
-      - Within the get_total class method, I've created a variable called formatted_total_price to format the overall total in the __init__ function to two decimal places.
+      - Within the get_total class method, I've created a variable called formatted_total_price to store the overall total in the __init__ function, formatted to two decimal places.
       - I've then created a print statement to output the formatted price to the console.
         
 - Explanation of the show_items class method:        
