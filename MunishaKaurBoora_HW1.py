@@ -229,7 +229,7 @@ jasmine.show_all_subjects()
 Explanation for code above:
 - For task 2, I used the Student class template provided and made no alterations to it.
 - I have created a new class called CFGStudent. 
-      - I have passed the parent class, Student, as a parameter to the child class, when I created the new class called CFGStudent. This allows the CFGStudent class to inherit all the methods and properties from the Student class.
+      - I passed the parent class, Student, as a parameter to the child class, when I created the new class called CFGStudent. This allows the CFGStudent class to inherit all the methods and properties from the Student class.
 
 - Explanation of the add_subject_and_grade class method:  
       - Within the add_subject_and_grade class method, I've used the .update() method to update the dictionary in the __init__ function of the parent class with the key:value pair passed to the add_subject_and_grade class method.
@@ -244,12 +244,12 @@ Explanation for code above:
       - I've created a list_of_subjects variable to store a list of all of the keys in the subjects dictionary in the __init__ function of the parent class.
       - I've used a print function to output a message to the console.
       - I've then used a for loop to iterate through the elements of the list stored in list_of_subjects. 
-            - I've created a variable called subject_grade and used the .get() method to return the value of the key specified in the subject_grade variable.       
+            - I've created a variable called subject_grade and used the .get() method to return the value of the key specified in the subject_grade variable.
             - I've used a print function to output each subject and its corresponding grade to the console.
 
 - Explanation of the calculate_overall_mark class method:  
       - I've created a list_of_subjects variable to store a list of all of the keys in the subjects dictionary in the __init__ function of the parent class.
-      - I've created the variable number_of_subjects as a counter to count the number of subjects in the dictionary in the __init__ function of the parent class.
+      - I've created the variable number_of_subjects to use as a counter. The variable would store the total number of subjects in the dictionary in the __init__ function of the parent class.
       - I've created the variable overall_grades_total so that I can add the grades of all subjects, in the dictionary in the __init__ function of the parent class, to the variable one by one.
       - I've then used a for loop to iterate through the elements of the list stored in list_of_subjects. 
             - As I iterate through each of the elements, I add one to the variable number_of_subjects and a subject's grade to the variable overall_grades_total.
@@ -259,3 +259,10 @@ Explanation for code above:
 - Below the class, I've created two new object instances of the CFGStudent class. The code for this is 'sarah = CFGStudent('Sarah', 23, 24)' and 'jasmine = CFGStudent('Jasmine', 27, 4)'.
       - I've then called the various methods within the CFGStudent class to test that the methods do indeed work. I have done this for the two different students.
 """
+
+
+
+
+
+
+
