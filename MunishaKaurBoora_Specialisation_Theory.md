@@ -11,7 +11,7 @@
 
 
 #### 3. What's inheritance in OOP?
-
+- Describe inheritance and provide 2 examples ...
 
 #### 4. If you had to make a program that could vote for the top three funniest people in the office, how would you do that? How would you make it possible to vote on those people?
 
@@ -25,7 +25,7 @@
 #### 7. What is a reduced function used for?
 
 
-#### 8. How does merge sort work
+#### 8. How does merge sort work?
 
 
 #### 9. Generators - Generator functions allow you to declare a function that behaves like an iterator, i.e. it can be used in a for loop. What is the use case?
