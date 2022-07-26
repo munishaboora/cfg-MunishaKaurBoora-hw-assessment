@@ -9,4 +9,4 @@ Group members:
 
 1. What are you building?
 
-![An architecture diagram of the system!](https://drive.google.com/drive/folders/13PBQy3D0kAi9KUuiUJNuTqeita3hc1co)
+![An architecture diagram of the system!](https://drive.google.com/file/d/1eAvIzpoXHF_ahXs64vyJ8TY-_p2IQtFs/view?usp=sharing)
