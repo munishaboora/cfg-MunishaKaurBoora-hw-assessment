@@ -44,6 +44,6 @@
 - We will be using code reviews to assess each other's code. We will also be working closely against the requirements given to us at the beginning of the project. We will try to use best practices throughout, referring to previous lessons and codebases for inspiration.
 - We will also be using branches and pull requests to ensure no one overrides any important code and nothing is pushed without the approval of the team. This is to further ensure the coherence of the code base.
 - Tests:
- 1. only adds a new user name when not existing in db.
- 2. only updates the high score when higher than the previous score.
- 3. When user selects correct answer score is increase +1
+     1. only adds a new user name when not existing in db.
+     2. only updates the high score when higher than the previous score.
+     3. When user selects correct answer score is increase +1
