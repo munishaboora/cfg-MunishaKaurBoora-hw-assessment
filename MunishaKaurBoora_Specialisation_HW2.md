@@ -1,6 +1,6 @@
 # HOMEWORK WEEK 2 - Revision Game App
 
-Group members:
+### Group members:
  - Munisha Boora
  - Rebecca Brunning
  - Ellie Mayne
