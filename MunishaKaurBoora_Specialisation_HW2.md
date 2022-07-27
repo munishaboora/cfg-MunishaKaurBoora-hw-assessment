@@ -36,6 +36,10 @@
 
 ### 4. Provide a sample architecture diagram of your system.
 ![An architecture diagram of the system!](https://drive.google.com/uc?export=view&id=1eAvIzpoXHF_ahXs64vyJ8TY-_p2IQtFs)
+- The diagram above shows the design of the revision quiz application. 
+- CFG students will access the quiz application via their individual web browsers. The web browsers interact with the API endpoints using flask in the middleware. 
+   - The flask endpoints call on eihter the quiz game, the leaderboard, or login page, all of which will be writen in python. 
+- To access the database, a data access layer handles all calls to the database.
 
 ### 5. Describe the team approach to the project work: how are you planning to distribute the workload, how are you managing your code, how are you planning to test your system.
 - The team are working in an agile manner i.e. using daily stand ups and retros
