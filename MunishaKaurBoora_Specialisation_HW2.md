@@ -14,10 +14,9 @@
 
 
 ### 2. What does it do or what kind of problem does it solve?
-- The app we are building aims to help improve the knowledge of CFG students. 
 - The app's aim is to create a revision-based quiz. 
-- The app will allow the user to test their knowledge on CFG topics in the form of a quiz. The problem this solves is a user may struggle to learn complex topics in a memorable and fun way, the app solves this. Ultimately we aim to increase retention for CFG students, so they can learn software engineering topics easier.
-
+- The app will allow a user to test their knowledge on CFG course topics in the form of a quiz. 
+- The app we are building aims to help improve the knowledge of CFG students. The problem this app solves is that of a user potentially struggling to learn complex topics in a memorable and fun way. Ultimately we aim to increase retention of CFG course content for CFG students, so they can learn software engineering topics more easily.
 
 ### 3. What are the key features of your system?
 - User interface
@@ -35,7 +34,7 @@
      1. users
 
 
-### 4. Provide a sample architecture diagram of your system
+### 4. Provide a sample architecture diagram of your system.
 ![An architecture diagram of the system!](https://drive.google.com/uc?export=view&id=1eAvIzpoXHF_ahXs64vyJ8TY-_p2IQtFs)
 
 ### 5. Describe the team approach to the project work: how are you planning to distribute the workload, how are you managing your code, how are you planning to test your system.
