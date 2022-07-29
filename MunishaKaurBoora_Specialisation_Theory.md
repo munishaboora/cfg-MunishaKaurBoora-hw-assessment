@@ -77,6 +77,12 @@ An example of how to use a generator:
 ```commandline
 
 ```
+
+   - Example 2:
+```commandline
+
+```
+
 Explanation for the code above:
 - hhh
 
