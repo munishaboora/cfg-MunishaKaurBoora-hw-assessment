@@ -8,30 +8,41 @@
  - Xian-Ting Lee
 
 ### 1. What are you building?
-- Our project involves creating a revision app consisting of multiple quizzes. For instance, in our app, we will include a quiz on classes and another on decorators.
-- When our application is run, an individual would be presented with all possible categories. Upon selecting a category, an individual would be presented with all of the questions within that particular category. As an individual answers a question, their score would increase by 1 for each question answered correctly. After completing a quiz, the overall score for the quiz would be displayed. 
-- To create the application, we will create an API, use MySQL, and write the logic in python. As an additional goal, we aim to create a frontend using HTML, JavaScript and CSS.
+- Our project involves creating a revision application which will consist of multiple quizzes. These quizzes would all be split by the categories to which they relate. For instance, in our application, we will include a quiz on classes and another on decorators to start with. We endeavour to add more quiz categories to our application over time.
+- When our application is run, an individual would be presented with all possible quiz categories. Upon selecting a category, an individual would then be presented with all of the questions relating to that particular category. As an individual answers a question, their score would increase by 1 for each question answered correctly and by 0 for each question answered incorrectly. After completing a single quiz, the overall score for the quiz in question would be displayed on the screen. 
+- To create our application, we will write the logic of the application in python, create a Database using MySQL, and use Flask with python to build the API. 
+   - As an additional goal, we aim to create a frontend using HTML, JavaScript and CSS.
+
 
 
 ### 2. What does it do or what kind of problem does it solve?
-- The app's aim is to create a revision-based quiz. 
-- The app will allow a user to test their knowledge on CFG course topics in the form of a quiz. 
-- The app we are building aims to help improve the knowledge of CFG students. The problem this app solves is that of a user potentially struggling to learn complex topics in a memorable and fun way. Ultimately we aim to increase retention of CFG course content for CFG students, so they can learn software engineering topics more easily.
+- The revision application will allow a user to test their knowledge of the various topics taught throughout the CFG nanodegree. The application does this by presenting the user with a selection of quizzes to choose from and complete. 
+   - A particular quiz would contain questions relating to a topic taught as part of the CFG curriculum. For instance the classes category would test an individual on the material covered in the PowerPoint presentations of the classes lessons.
+- This application solves the problem faced by a user who may be struggling to learn complex topics in a memorable and fun manner. 
+- The app we are building aims to help improve the knowledge of CFG students whilst they’re taking the course and also assist them in their revision for their assessments. We hope to reach this objective through the creation of an application consisting of various revision-based quizzes. 
+- Ultimately, we aim to increase retention for CFG students so they can learn the material covered as part of the CFG nanodegree more easily.
+
 
 ### 3. What are the key features of your system?
 - User interface
- 1. Displays quiz questions
- 2. Displays score
- 3. *STRETCH* Enter username
- 4. *STRETCH* Display scoreboard 
- 5. *STRETCH* Ability to add user questions
+   - Displays quiz questions
+   - Displays score
+   - *STRETCH* Enter user login details
+   - *STRETCH* Display a leaderboard 
+   - *STRETCH* Ability to add user questions
+   - *STRETCH* Sound playing in background
+   - *STRETCH* Countdown timer
+
 - Database
- 1. 3 tables
-     1. quiz_categories
-     2. all_quiz_questions
-     3. quiz_question_answers
- 2. *STRETCH*
-     1. users
+   - 3 tables
+      - quiz_categories
+      - all_quiz_questions
+      - quiz_question_answers
+
+   - *STRETCH*
+      - quiz_participant_scores_history
+      - quiz_participants
+
 
 
 ### 4. Provide a sample architecture diagram of your system.
