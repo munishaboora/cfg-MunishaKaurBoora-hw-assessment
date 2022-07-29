@@ -55,10 +55,10 @@
 
 ### 5. Describe the team approach to the project work: how are you planning to distribute the workload, how are you managing your code, how are you planning to test your system.
 - The team are working in an agile manner i.e. using daily stand ups, sprint reviews, sprint retrospective, etc.
-- We are planning to work using pair programming so that each team member has continuous support throughout the project. This will also ensure no one is left behind and we are aware of one anothers progress and any blockers.
-- We will use several collaboration tools, such as miro, trello, etc. These collaboration tools will help to share resources wiht other team mmebers and ensure everyone is up to date on the group's progress.
+- We are planning to work using pair programming so that each team member has continuous support throughout the project. This will also ensure no one is left behind and we are aware of one anothers' progress and any blockers.
+- We will use several collaboration tools, such as miro, trello, etc. These collaboration tools will help us share resources with one another and ensure everyone is up to date on the group's progress.
 - We will be conducting regular code reviews to assess each other's code. We will also be working closely to meet the requirements set out at the beginning of the project on both the miro board and the kanban board. We will try to use best practices throughout, referring to previous lessons and codebases for inspiration.
-- We will also be using githib branches and pull requests to ensure no one overrides any important code and so that the code on a particular branch is only merge into the main branch with approval of the whole team. This is to further ensure the coherence of the code base.
+- We will also be using githib branches and pull requests to ensure no one overrides any important code and so that the code on a particular branch is only merged into the main branch with approval of the whole team. This is to further ensure the coherence of the code base.
 
 - Tests to be conducted:
    - A new username is only added when it does not exist in the database.
