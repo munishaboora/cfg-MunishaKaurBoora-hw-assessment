@@ -73,6 +73,7 @@ Explanation for the code above:
 
 #### 9. Generators - Generator functions allow you to declare a function that behaves like an iterator, i.e. it can be used in a for loop. What is a use case?
 An example of how to use a generator:
+   - Example 1:
 ```commandline
 
 ```
