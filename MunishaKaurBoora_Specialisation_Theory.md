@@ -53,9 +53,9 @@ vote.vote_for_a_person('Joey')
 vote.vote_for_a_person('Sandy')
 
 vote.top_three_most_funny_individuals()
-
 ```
-
+Explanation for the code above:
+- 
 
 
 #### 5. What's the software development cycle?
