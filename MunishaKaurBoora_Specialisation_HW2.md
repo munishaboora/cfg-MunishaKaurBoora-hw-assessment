@@ -54,13 +54,14 @@
 - To access the database, a data access layer handles all calls to the database.
 
 ### 5. Describe the team approach to the project work: how are you planning to distribute the workload, how are you managing your code, how are you planning to test your system.
-- The team are working in an agile manner i.e. using daily stand ups and retros
+- The team are working in an agile manner i.e. using daily stand ups, sprint reviews, sprint retrospective, etc.
 - We are planning to work using pair programming so that we have continuous support throughout the project. This will also ensure no one is left behind and we are aware of one anothers progress and any blockers.
 - We use several collaboration tools, such as miro, trello, etc, to share resources and make sure everyone is up to date.
-- We will be using code reviews to assess each other's code. We will also be working closely against the requirements given to us at the beginning of the project. We will try to use best practices throughout, referring to previous lessons and codebases for inspiration.
-- We will also be using branches and pull requests to ensure no one overrides any important code and nothing is pushed without the approval of the team. This is to further ensure the coherence of the code base.
+- We will be conducting code reviews to assess each other's code. We will also be working closely to meet the requirements set out at the beginning of the project on both the miro board and the kanban board. We will try to use best practices throughout, referring to previous lessons and codebases for inspiration.
+- We will also be using githib branches and pull requests to ensure no one overrides any important code and so that the code on a particular branch is only merge into the main branch with approval of the whole team. This is to further ensure the coherence of the code base.
+
 - Tests to be conducted:
    - A new username is only added when it does not exist in the database.
-   - The highscore only updates when the new score exceeds the highscore.
+   - The highscore only updates when the new score exceeds the present highscore.
    - When a user select a correct answer, the score increases by 1.
 
