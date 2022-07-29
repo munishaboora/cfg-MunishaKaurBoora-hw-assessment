@@ -75,11 +75,34 @@ Explanation for the code above:
 An example of how to use a generator:
    - Example 1:
 ```commandline
+def powers_of_four(items_length):
+    n = 0
+    while n < items_length:
+        yield 4 ** n
+        n += 1
 
+
+my_iter = powers_of_four(5)
+
+for i in my_iter:
+    print(i)
 ```
+Explanation for the code above:
+- hhh
 
    - Example 2:
 ```commandline
+def print_elements(number_of_elements):
+    n = 1
+    while n < number_of_elements:
+        yield f"Element number {n}."
+        n += 1
+
+
+generator = print_elements(4)
+
+for i in generator:
+    print(i)
 
 ```
 
