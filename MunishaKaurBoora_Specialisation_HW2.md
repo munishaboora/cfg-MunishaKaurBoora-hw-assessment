@@ -27,7 +27,7 @@
 - User interface
    - Displays quiz questions
    - Displays score
-   - *Stretch goal:* Enter user login details
+   - **Stretch goal:** Enter user login details
    - *Stretch goal:* Display a leaderboard 
    - *Stretch goal:* Ability to add user questions
    - *Stretch goal:* Sound playing in background
