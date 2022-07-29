@@ -27,11 +27,11 @@
 - User interface
    - Displays quiz questions
    - Displays score
-   - *STRETCH* Enter user login details
-   - *STRETCH* Display a leaderboard 
-   - *STRETCH* Ability to add user questions
-   - *STRETCH* Sound playing in background
-   - *STRETCH* Countdown timer
+   - *Stretch goal:* Enter user login details
+   - *Stretch goal:* Display a leaderboard 
+   - *Stretch goal:* Ability to add user questions
+   - *Stretch goal:* Sound playing in background
+   - *Stretch goal:* Countdown timer
 
 - Database
    - 3 tables
@@ -55,9 +55,11 @@
 ### 5. Describe the team approach to the project work: how are you planning to distribute the workload, how are you managing your code, how are you planning to test your system.
 - The team are working in an agile manner i.e. using daily stand ups and retros
 - We are planning to work using pair programming so that we have continuous support throughout the project. This will also ensure no one is left behind and we are aware of one anothers progress and any blockers.
+- We use several collaboration tools, such as miro, trello, etc, to share resources and make sure everyone is up to date.
 - We will be using code reviews to assess each other's code. We will also be working closely against the requirements given to us at the beginning of the project. We will try to use best practices throughout, referring to previous lessons and codebases for inspiration.
 - We will also be using branches and pull requests to ensure no one overrides any important code and nothing is pushed without the approval of the team. This is to further ensure the coherence of the code base.
 - Tests:
-     1. only adds a new user name when not existing in db.
-     2. only updates the high score when higher than the previous score.
-     3. When user selects correct answer score is increase +1
+   - only adds a new user name when not existing in db.
+   - only updates the high score when higher than the previous score.
+   - When user selects correct answer score is increase +1
+
