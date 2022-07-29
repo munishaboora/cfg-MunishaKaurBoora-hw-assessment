@@ -14,17 +14,17 @@
 - Describe inheritance and provide 2 examples ...
 
 #### 4. If you had to make a program that could vote for the top three funniest people in the office, how would you do that? How would you make it possible to vote on those people?
-
+```commandline
 from collections import Counter
 
 
 class TopThreeMostFunnyIndividuals:
     def __init__(self):
         self.votes_received = []
-        
+
     def vote_for_a_person(self, add_vote):
         self.votes_received.append(add_vote)
-        
+
     def top_three_most_funny_individuals(self):
         votes_per_person = Counter(self.votes_received)
         three_most_funny_individuals_list = sorted(votes_per_person, key=votes_per_person.get, reverse=True)[:3]
@@ -53,6 +53,9 @@ vote.vote_for_a_person('Joey')
 vote.vote_for_a_person('Sandy')
 
 vote.top_three_most_funny_individuals()
+
+```
+
 
 
 #### 5. What's the software development cycle?
