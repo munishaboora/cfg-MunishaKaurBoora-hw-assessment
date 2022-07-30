@@ -34,14 +34,16 @@ class Lion:
     def diet(self):
         print("carnivore")
 
+
 class Giraffe:
     def diet(self):
         print("herbivore")
 
-object_lion=Lion()
+
+object_lion = Lion()
 object_lion.diet()
 
-object_giraffe=Giraffe()
+object_giraffe = Giraffe()
 object_giraffe.diet()
 ```
 
