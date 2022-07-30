@@ -27,8 +27,24 @@
       - Process Oriented Programming: ....
 
 #### 2. What's polymorphism in OOP?
-- Describe polymorphism and provide 2 examples ...
-- Explain the exmaples
+- Describe polymorphism and provide 2 examples ... Explain the exmaples
+
+```commandline
+class Lion:
+    def diet(self):
+        print("carnivore")
+
+class Giraffe:
+    def diet(self):
+        print("herbivore")
+
+object_lion=Lion()
+object_lion.diet()
+
+object_giraffe=Giraffe()
+object_giraffe.diet()
+```
+
 ```commandline
 class VehicleDetails:
 
