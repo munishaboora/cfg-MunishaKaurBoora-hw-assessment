@@ -1,7 +1,6 @@
 def generate_phrase(characters, phrase):
     phrase_index = 1
     for letter in phrase:
-        print(letter)
 
         # if phrase[:phrase_index] in characters:
         #     index = characters.find(phrase[:phrase_index])
