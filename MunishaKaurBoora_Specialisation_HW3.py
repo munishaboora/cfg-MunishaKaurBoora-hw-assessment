@@ -1,5 +1,6 @@
 def generate_phrase(characters, phrase):
     phrase_index = 1
+
     for letter in phrase:
 
         if letter in characters:
@@ -17,34 +18,34 @@ def generate_phrase(characters, phrase):
 
 # Test case 1 -- False
 
-# characters = "odeC stFir slrG"
-# phrase = "Code First Girls"
-#
-# print(generate_phrase(characters, phrase))
+characters = "odeC stFir slrG"
+phrase = "Code First Girls"
+
+print(generate_phrase(characters, phrase))
 
 ###################################################
 
 # Test case 2 -- False
 
-# characters = "A"
-# phrase = "a"
-#
-# print(generate_phrase(characters, phrase))
+characters = "A"
+phrase = "a"
+
+print(generate_phrase(characters, phrase))
 
 ###################################################
 
 # Test case 3 -- True
 
-# characters = "odeC stFir slrG"
-# phrase = ""
-#
-# print(generate_phrase(characters, phrase))
+characters = "odeC stFir slrG"
+phrase = ""
+
+print(generate_phrase(characters, phrase))
 
 ###################################################
 
 # Test case 4 -- True
 
-# characters = "aheaollabbhb"
-# phrase = "hello"
-#
-# print(generate_phrase(characters, phrase))
+characters = "aheaollabbhb"
+phrase = "hello"
+
+print(generate_phrase(characters, phrase))
