@@ -27,6 +27,11 @@
       - Process Oriented Programming: ....
 
 #### 2. What's polymorphism in OOP?
+- Polymorphism can be defined as a condition that occurs in many different forms. 
+- It is a concept in Python programming wherein an object defined in Python can be used in different ways. 
+- It allows the programmer to define multiple methods in a derived class, and it has the same name as present in the parent class. 
+- Such scenarios support method overloading in Python.
+
 - Describe polymorphism and provide 2 examples ... Explain the exmaples
 
 ```commandline
