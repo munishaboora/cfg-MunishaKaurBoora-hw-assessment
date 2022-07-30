@@ -8,7 +8,8 @@
    - Describe OOP
    - Example of OOP x 2
    - Explain example 
--The key differences between Object Oriented Programming and Process Oriented Programming are:
+
+- The key differences between Object Oriented Programming and Process Oriented Programming are:
    - print
       • Object Oriented Programming: ....
       • Process Oriented Programming: ....
