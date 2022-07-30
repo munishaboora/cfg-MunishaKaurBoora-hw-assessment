@@ -32,7 +32,8 @@
 
 
 #### 3. What's inheritance in OOP?
-- Describe inheritance and provide 2 examples ...
+- Describe inheritance and 
+- provide 2 examples ...
 
 ```commandline
 class VehicleDetails:
