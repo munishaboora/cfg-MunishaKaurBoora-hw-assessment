@@ -25,12 +25,16 @@ print(generate_phrase(characters, phrase))
 
 ###################################################
 
+###################################################
+
 # Test case 2 -- False
 
 characters = "A"
 phrase = "a"
 
 print(generate_phrase(characters, phrase))
+
+###################################################
 
 ###################################################
 
@@ -43,9 +47,14 @@ print(generate_phrase(characters, phrase))
 
 ###################################################
 
+###################################################
+
 # Test case 4 -- True
 
 characters = "aheaollabbhb"
 phrase = "hello"
 
 print(generate_phrase(characters, phrase))
+
+###################################################
+
