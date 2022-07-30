@@ -15,46 +15,41 @@ def generate_phrase(characters, phrase):
 
 
 ###################################################
-
 # Test case 1 -- False
 
 characters = "odeC stFir slrG"
 phrase = "Code First Girls"
 
 print(generate_phrase(characters, phrase))
-
 ###################################################
 
-###################################################
 
+###################################################
 # Test case 2 -- False
 
 characters = "A"
 phrase = "a"
 
 print(generate_phrase(characters, phrase))
-
 ###################################################
 
-###################################################
 
+###################################################
 # Test case 3 -- True
 
 characters = "odeC stFir slrG"
 phrase = ""
 
 print(generate_phrase(characters, phrase))
-
 ###################################################
 
-###################################################
 
+###################################################
 # Test case 4 -- True
 
 characters = "aheaollabbhb"
 phrase = "hello"
 
 print(generate_phrase(characters, phrase))
-
 ###################################################
 
