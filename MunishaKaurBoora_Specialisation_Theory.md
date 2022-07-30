@@ -131,7 +131,5 @@ for i in generator:
 Explanation for the code above:
 - hhh
 
-
-
 #### 10. Decorators - A page for useful (or potentially abusive?) decorator ideas. What is the return type of the decorator?
 
