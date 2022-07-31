@@ -168,6 +168,25 @@ Explanation for the code above:
 
 #### 7. What is a reduced function used for?
 
+```commandline
+from functools import reduce
+
+numbers = [0, 5, 10, 20, 30, 40]
+
+
+def sum_up(a, b): 
+    return a + b
+
+
+result_A = reduce(sum_up, numbers) 
+print(result_A)
+```
+
+```commandline
+from functools import reduce
+
+print(reduce(lambda a, b: a + b, [0, 5, 10, 20, 30, 40])) 
+```
 
 #### 8. How does merge sort work?
 
@@ -212,3 +231,4 @@ Explanation for the code above:
 
 #### 10. Decorators - A page for useful (or potentially abusive?) decorator ideas. What is the return type of the decorator?
 
+- list 2 good ideas of decorators and 2 bad??
