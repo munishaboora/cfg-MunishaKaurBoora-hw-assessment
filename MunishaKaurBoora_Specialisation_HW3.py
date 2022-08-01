@@ -31,8 +31,8 @@ Explanation for code above:
 
 - Outside of the if statement, I've added 1 to the value stored in phrase_index so that the index number of the the string that I need to generate increases by 1.
 - Finally, I return the output of 'phrase in characters'. 
-   - The output would be True if the charcaters of the string that I need to generate exist in the string of available characters.
-   - The output would be False if the charcaters of the string that I need to generate do not exist in the string of available characters.  
+   - The output would be True if the characters of the string that I need to generate exist in the string of available characters.
+   - The output would be False if the characters of the string that I need to generate do not exist in the string of available characters.  
 """
 
 ###################################################
