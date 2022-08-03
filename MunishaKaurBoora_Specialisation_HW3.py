@@ -15,7 +15,7 @@ def generate_phrase(characters, phrase):
 """
 Explanation for code above:
 - Ive used the function provided, generate_phrase, as a template for my code. 
-   - I've kept the arguments 'characters' and 'phrase' provided. This is so that I can later test that the code produces the desired output by passing variables storing strings to the fucntion generate_phrase.
+   - I've kept the arguments 'characters' and 'phrase' provided. This is so that I can later test that the code above produces the desired output by passing variables that store strings to the fucntion generate_phrase.
    
 - Within the body of the function, generate_phrase, I've created a variable phrase_index and set it equal to 1. 
    - I've created this variable so that I can later use the index number of the string that I need to generate to slice the string.
@@ -35,6 +35,12 @@ Explanation for code above:
    - The output would be False if the characters of the string that I need to generate do not exist in the string of available characters.  
 """
 
+"""
+ - I have haven't refactored the generate_phrase function as I felt that I did not need to.
+ - I've made sure to include a return statement in the generate_phrase function so that I can test the code.
+ - Please refer to the unit_tests.py file for the unit tests corresponding to the generate_phrase function.
+"""
+
 ###################################################
 # Test case 1 -- False
 
@@ -43,7 +49,6 @@ phrase = "Code First Girls"
 
 print(generate_phrase(characters, phrase))
 ###################################################
-
 
 ###################################################
 # Test case 2 -- False
@@ -54,7 +59,6 @@ phrase = "a"
 print(generate_phrase(characters, phrase))
 ###################################################
 
-
 ###################################################
 # Test case 3 -- True
 
@@ -64,7 +68,6 @@ phrase = ""
 print(generate_phrase(characters, phrase))
 ###################################################
 
-
 ###################################################
 # Test case 4 -- True
 
@@ -73,4 +76,3 @@ phrase = "hello"
 
 print(generate_phrase(characters, phrase))
 ###################################################
-

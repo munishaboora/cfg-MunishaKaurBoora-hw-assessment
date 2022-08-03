@@ -2,7 +2,7 @@ from unittest import TestCase, main
 from MunishaKaurBoora_Specialisation_HW3 import generate_phrase
 
 class TestGeneratePhrase(TestCase):
-    def test_code_first_firls(self):
+    def test_code_first_girls(self):
         characters = "odeC stFir slrG"
         phrase = "Code First Girls"
 
