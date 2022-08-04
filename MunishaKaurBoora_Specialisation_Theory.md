@@ -1,31 +1,30 @@
 #### 1. How does Object-Oriented Programming differ from Process Oriented Programming?
 
-- Object Oriented Programming is ...
-   - Describe OOP
-   - Example of OOP x 2
-   - Explain example 
+- Object-Oriented Programming is a programming paradigm which relies on the concept of classes and objects. 
+   - It is used to structure a software program into simple, reusable pieces of code blueprints, usually referred to as classes. 
+   - The classes are normally used to create individual instances of objects. 
 
-- Process Oriented Programming is ...
-   - Describe OOP
-   - Example of OOP x 2
-   - Explain example 
+- Process Oriented Programming is a programming paradigm in which the primary concerns are the process structure and communication between the processes of a system.
 
 - The key differences between Object-Oriented Programming and Process Oriented Programming are:
-   - print
-      - Object Oriented Programming: .... 
-      - Process Oriented Programming: ....
-   - print
-      - Object Oriented Programming: .... 
-      - Process Oriented Programming: ....
-   - print
-      - Object Oriented Programming: .... 
-      - Process Oriented Programming: ....
-   - print
-      - Object Oriented Programming: .... 
-      - Process Oriented Programming: ....
-   - print
-      - Object Oriented Programming: .... 
-      - Process Oriented Programming: ....
+   - Access specifiers
+      - Object-Oriented Programming has access specifiers such as private, public, protected, etc. 
+      - Process Oriented Programming does not have access specifiers.
+   - The approaches
+      - Object-Oriented Programming follows a bottom-up approach. 
+      - Process Oriented Programming follows a top-down approach.
+   - Adding new data and functions
+      - In Object-Oriented Programming, adding new data and functions is relatively easy. 
+      - In Process Oriented Programming, adding new data and functions isn't easy.
+   - Different usages
+      - Object-Oriented Programming is used for designing complex and large programs. 
+      - Process Oriented Programming is used for designing medium-sized programs.
+   - Code reusability
+      - In Object-Oriented Programming, code reusability is present.
+      - In Process Oriented Programming, code reusability is not present.
+   -  The division of the programs
+      - In Object-Oriented Programming, the program is divided into small parts, referred to as objects.
+      - In Process Oriented Programming, the program is divided into small parts, referred to as functions.
 
 #### 2. What's polymorphism in OOP?
 - Polymorphism can be defined as a condition that occurs in many different forms. 
