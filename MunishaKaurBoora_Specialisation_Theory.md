@@ -160,7 +160,15 @@ Explanation for the code above:
 
 
 #### 5. What's the software development cycle?
-
+- The software development Cycle involves the application of standard business practices to the building of software applications.
+- The software development cycle is typically broken down into the following steps: Planning, Requirements, Design, Implement, Test and Integrate, Deploy, and Maintain.
+   - *Planning*
+   - Requirements
+   - Design
+   - Implement
+   - Test and Integrate
+   - Deploy
+   - Maintain
 
 #### 6. What's the difference between agile and waterfall?
 
