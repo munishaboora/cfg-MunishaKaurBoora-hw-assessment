@@ -1,5 +1,4 @@
 #### 1. How does Object-Oriented Programming differ from Process Oriented Programming?
-
 - Object-Oriented Programming is a programming paradigm which relies on the concept of classes and objects. 
    - It is used to structure a software program into simple, reusable pieces of code blueprints, usually referred to as classes. 
    - The classes are normally used to create individual instances of objects. 
