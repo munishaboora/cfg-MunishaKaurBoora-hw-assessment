@@ -196,29 +196,33 @@ Explanation for the code above:
        - Once the application has been deployed and is being used, the final phase discovers bugs that slipped through the cracks during testing and resolves them - this can spawn new development cycles.
 
 #### 6. What's the difference between agile and waterfall?
-- Agile
+- Agile methodology is an approach to software development that helps the continuous iteration of development and testing in the software development process. 
+   - In this model, development and testing activities are concurrent. 
+   - This process allows more communication between customers, developers, managers, and testers.
 
-- Waterfall
+- The waterfall methodology is a project management approach that emphasises a linear progression from the beginning to the end of a project.  
+   - In Waterfall, one stage of the workflow needs to be fully completed before moving on to the next one.
 
 - The key differences between agile and waterfall:
-    - Access specifiers
-        - agile and 
-        - waterfall
-    - The approaches
-        - agile and 
-        - waterfall
-    - Adding new data and functions
-        - agile and 
-        - waterfall
-    - Different usages
-        - agile and 
-        - waterfall
-    - Code reusability
-        - agile and 
-        - waterfall
-    - The division of the programs
-        - agile and 
-        - waterfall
+    - Sprints versus phases
+        - Agile: separates the project development lifecycle into sprints.
+        - Waterfall: divides the software development process into distinct phases.
+    - Changes to requirements 
+        - Agile: has a flexible method which allows changes to be made to the project development requirements - even if the initial planning has been completed.
+        - Waterfall: there is no scope to change the requirements once the project development starts.
+    - Development approach
+        - Agile: follows an iterative development approach, due to which the planning, development, prototyping and other software development phases may appear more than once.
+        - Waterfall: the project development phases such as designing, development, testing, are completed once in the Waterfall model.
+    - Requirements preparation
+        - Agile: the product owner prepares the requirements with the team almost daily during a project.
+        - Waterfall: business analysts prepare requirements before the beginning of the project.
+    - Testing
+        - Agile: testing is performed concurrently with software development.
+        - Waterfall: the testing phase comes after the implementation phase.
+    - Changes to project description
+        - Agile: description of project details can be altered anytime during the software development process.
+        - Waterfall: detailed description required to implement the waterfall methodology.
+
 #### 7. What is a reduced function used for?
 
 ```commandline
@@ -242,6 +246,8 @@ print(reduce(lambda a, b: a + b, [0, 5, 10, 20, 30, 40]))
 ```
 
 #### 8. How does merge sort work?
+- What is merge sort
+- Example 
 
 #### 9. Generators - Generator functions allow you to declare a function that behaves like an iterator, i.e. it can be used in a for loop. What is a use case?
 
