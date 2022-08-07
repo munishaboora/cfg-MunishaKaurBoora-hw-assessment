@@ -30,14 +30,13 @@
 
 #### 2. What's polymorphism in OOP?
 
-- Polymorphism can be defined as a condition that occurs in many different forms.
-- It is a concept in Python programming wherein an object defined in Python can be used in different ways.
-- It allows the programmer to define multiple methods in a derived class, and it has the same name as present in the
-  parent class.
+- Polymorphism is the condition of occurrence in different forms. 
+- Polymorphism refers to the use of a single type entity (method, operator or object) to represent different types in different scenarios.
+- Polymorphism is a concept in Python programming wherein an object defined in Python can be used in different ways.
+- Polymorphism allows the programmer to define multiple methods in a derived class, and it has the same name as present in the parent class.
 - Such scenarios support method overloading in Python.
 
-- Describe polymorphism and provide 2 examples ... Explain the exmaples
-
+- Example 1:
 ```commandline
 class Lion:
     def diet(self):
@@ -55,7 +54,15 @@ object_lion.diet()
 object_giraffe = Giraffe()
 object_giraffe.diet()
 ```
+Explanation for the code above:
+- Above, I've created two new classes: Lion and Giraffe.
+- The outputs from this program are carnivore and herbivore, respectively. 
+- The two classes both use the method name diet, but they define the methods differently. 
+- An object instantiated from the Lion class will use the method as it is defined in that class. 
+- The Giraffe class may have a method with the same name, but objects instantiated from the Lion class won’t interact with it.
+- This code above is an example of occurrence in different forms. 
 
+- Example 2:
 ```commandline
 class VehicleDetails:
 
@@ -84,11 +91,19 @@ munishas_cycle.print_vehicle_details()
 munishas_car = Car('BMW', 'purple', 'BMW X5')
 munishas_car.print_vehicle_details()
 ```
+Explanation for the code above:
+- The child classes, Cycle and Car, inherit methods and attributes from the parent class, VehicleDetails.
+- I can redefine certain methods and attributes specifically to fit the child classes above. This is known as Method Overriding.
+- Polymorphism allows us to access these overridden methods and attributes that have the same name as the parent class.
+- Above, I have overridden the print_vehicle_details method from the parent class, VehicleDetails. 
 
 #### 3. What's inheritance in OOP?
 
-- Describe inheritance and
-- provide 2 examples ...
+- Inheritance is the process by which one class takes on the attributes and methods of another. 
+- Newly formed classes are called child classes.
+- The classes that child classes are derived from are called parent classes. 
+- Child classes can override or extend the attributes and methods of parent classes. 
+- Child classes inherit the parent class' attributes and methods but can also specify attributes and methods that are unique to themselves.
 
 ```commandline
 class VehicleDetails:
@@ -117,6 +132,12 @@ munishas_cycle.print_cycle_details()
 munishas_car = Car('BMW', 'Purple', 'BMW X5')
 munishas_car.print_car_details()
 ```
+Explanation for the code above:
+- The code above is an example of multiple inheritance as the parent class, VehicleDetails, inherits to multiple child classes, Cycle and Car.
+- The Cycle and Car child classes take on the attributes and methods of the parent class, VehicleDetails.
+- The child classes, Cycle and Car, are derived from the parent class, VehicleDetails.
+- The child classes, Cycle and Car, extend the attributes of the parent class. For instance both classes use the brand, colour and model.
+- The child classes inherit the parent class' attributes but can also specify methods that are unique to themselves. For instance, the Cycle class specifies the print_cycle_details method and the Car class specifies the print_car_details method.
 
 #### 4. If you had to make a program that could vote for the top three funniest people in the office, how would you do that? How would you make it possible to vote on those people?
 - I would make a program that could vote for the top three funniest people in the office with the help of a class.
@@ -224,6 +245,9 @@ Explanation for the code above:
         - Waterfall: detailed description required to implement the waterfall methodology.
 
 #### 7. What is a reduced function used for?
+- In Python, the reduce() function is defined in the functools module. One must type 'from functools import reduce' before attempting to use the reduce function.
+- The reduce() function receives two arguments, a function and an iterable. However, it doesn't return another iterable, instead it returns a single value.
+- The reduce function is used to apply a particular function, passed in its argument, to all elements of the iterable, also passed in its argument.
 
 ```commandline
 from functools import reduce
@@ -235,26 +259,91 @@ def sum_up(a, b):
     return a + b
 
 
-result_A = reduce(sum_up, numbers) 
-print(result_A)
+result = reduce(sum_up, numbers) 
+print(result)
 ```
+Explanation for the code above:
+- Above, I've imported reduce from the functools module so that I can later use the reduce function.
+- I've created a variable called numbers and stored a list in it.
+- I've also created a function, sum_up, which sums up two inputs.
+- I've passed sum_up and numbers to a reduce function and stored the result in the variable result.
+- The value stored in result is printed to the console using the print function.
 
 ```commandline
 from functools import reduce
 
 print(reduce(lambda a, b: a + b, [0, 5, 10, 20, 30, 40])) 
 ```
+Explanation for the code above:
+- Above, I've imported reduce from the functools module so that I can later use the reduce function.
+- I've created a lambda function which sums two inputs and returns their sum.
+- I've passed the lambda function to the reduce function and also passed a list to the reduce function too.
+- I've then printed out the result of the reduce function to the console.
 
 #### 8. How does merge sort work?
-- What is merge sort
-- Example 
+- Merge sort is one of the most prominent divide-and-conquer sorting algorithms. It can be used to sort the values in any traversable data structure such as a list.
+- Merge sort works by splitting the input list into two halves, repeating the halving process on those halves, and finally merging the two sorted halves together.
+- The algorithm first moves from top to bottom, dividing the list into smaller and smaller parts until only the separate elements remain. 
+- From there, it moves back up, ensuring that the lists to be merged are sorted.
+- The algorithm works in O(nlogn). This is because the list is being split in log(n) calls and the merging process takes linear time in each call.
+
+- Below is an example of the implementation of the merge sort algorithm (the recursive approach for implementing merge sort):
+```commandline
+def mergeSort(myList):
+    if len(myList) > 1:
+        mid = len(myList) // 2
+        left = myList[:mid]
+        right = myList[mid:]
+
+        # Recursive call on each half
+        mergeSort(left)
+        mergeSort(right)
+
+        # Two iterators for traversing the two halves
+        i = 0
+        j = 0
+        
+        # Iterator for the main list
+        k = 0
+        
+        while i < len(left) and j < len(right):
+            if left[i] <= right[j]:
+              # The value from the left half has been used
+              myList[k] = left[i]
+              # Move the iterator forward
+              i += 1
+            else:
+                myList[k] = right[j]
+                j += 1
+            # Move to the next slot
+            k += 1
+
+        # For all the remaining values
+        while i < len(left):
+            myList[k] = left[i]
+            i += 1
+            k += 1
+
+        while j < len(right):
+            myList[k]=right[j]
+            j += 1
+            k += 1
+
+myList = [54,26,93,17,77,31,44,55,20]
+mergeSort(myList)
+print(myList)
+```
+Explanation for the code above:
+- The list is divided into left and right in each recursive call until two adjacent elements are obtained. 
+- The i and j iterators traverse the two halves in each call. The k iterator traverses the whole lists and makes changes along the way. 
+- If the value at i is smaller than the value at j, left[i] is assigned to the myList[k] slot and i is incremented. If not, then right[j] is chosen. This way, the values being assigned through k are all sorted. 
+- At the end of this loop, one of the halves may not have been traversed completely. Its values are simply assigned to the remaining slots in the list.
 
 #### 9. Generators - Generator functions allow you to declare a function that behaves like an iterator, i.e. it can be used in a for loop. What is a use case?
 
 An example of how to use a generator:
 
 - Example 1:
-
 ```commandline
 def powers_of_four(items_length):
     n = 0
@@ -270,11 +359,9 @@ for i in my_iter:
 ```
 
 Explanation for the code above:
-
 - hhh
 
-    - Example 2:
-
+ - Example 2:
 ```commandline
 def print_elements(number_of_elements):
     n = 1
