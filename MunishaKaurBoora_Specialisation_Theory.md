@@ -140,8 +140,31 @@ Explanation for the code above:
 - The child classes inherit the parent class' attributes but can also specify methods that are unique to themselves. For instance, the Cycle class specifies the print_cycle_details method and the Car class specifies the print_car_details method.
 
 #### 4. If you had to make a program that could vote for the top three funniest people in the office, how would you do that? How would you make it possible to vote on those people?
-- I would make a program that could vote for the top three funniest people in the office with the help of a class.
-- I would 
+To make a program that could vote for the top three funniest people in the office, I would start by creating some user stories, for instance:
+- As an employee working in the office, I want to be able to check who the funniest people in the office are, so that I know if I am considered to be funny.
+- As a manager in the office, I want to be able to analyse the overall votes, so that I know which individuals to award a prize to.
+
+- The first user story above essentially requires the ability for an employee to be able to check the cumulative votes. 
+- The second user story above requires the office manager to be able to use the overall votes to reward employees. 
+
+- As one can start writing the code for the backend or the frontend of a software in any order, all tasks above can be completed simultaneously, by three separate individuals in the development team.
+
+- To build a simple prototype of a program that could vote for the top three funniest people in the office, I would follow the agile methodology because it helps analyse and improve products whilst they’re going through different phases of development. 
+   - This methodology enables one to produce more valuable products for customers by following an incremental approach.
+   
+- Each sprint would last two weeks. A sprint is a short period of time when a scrum team works to complete a set amount of work.
+- Each sprint would start with a sprint planning meeting - this would be conducted before every sprint and would be attended by the scrum master, the development team and the product owner. 
+   - These individuals would all select the high priority items from the product backlog in such a way that the development team can deliver them in one single sprint. 
+      - The list of selected items is known as the sprint backlog. The development team works on the sprint backlog throughout the sprint.
+- During the sprint, every day, a daily scrum meeting is held. In this meeting each participant would answer 3 questions: what they did yesterday, what they'll do today, and the issues facing the developers.
+- The outcome of the sprint would be a potentially shippable product. Whether or not the product is ready to be shipped depends on whether the product owner wants to ship the product or add more features to the product.
+- Finally, after the sprint has taken place, the sprint review and sprint retrospective occur.
+   - In the sprint review, the scrum team would showcase what it has accomplished during the sprint - this may include a demo of new features added to the product.
+   - In the sprint retrospective, the team contemplate on what went well, what went badly and what could be improved. The objective of a sprint retrospective is to improve the sprints held in the future.
+
+- I would make a program that could vote for the top three funniest people in the office with the help of a class as shown below.
+   - Below, to cast a vote, the vote_for_a_person method would be called and passed a name.
+   - To display the top 3 most funny people, the top_three_most_funny_individuals method must be called.
 ```commandline
 from collections import Counter
 
@@ -183,9 +206,31 @@ vote.vote_for_a_person('Sandy')
 vote.top_three_most_funny_individuals()
 ```
 
-Explanation for the code above:
+Some key requirements:
+- A database to store a user's name, the number of votes they have, etc.
+- A user interface that makes voting for an individual fast and simple.
+- The framework to build the user interface and connect to the database.
 
-- hhh
+Main considerations:
+- Will the booking system be used for one office only or multiple offices operating under one company name?
+- The options available for storing the data e.g Informix, MySQL, MongoDB, etc.
+- How the booking system would deal with multiple people attempting to vote (as would be the case when voting for a popular individual).
+- What will the UI look like?
+- Do we need to support both web apps and mobile apps?
+
+Common or biggest problems:
+- Individuals not receiving confirmation of their vote being cast.
+- Users accidentally voting for the wrong person or accidentally misspelling something.
+- Users not wanting to use the website because they don’t like the user interface or it is too difficult to navigate.
+- The website taking a long time to load, leading to the user becoming frustrated.
+- How many options should be displayed to the user when casting a vote (a lot of options would be hard to display and may overwhelm the user).
+
+Components or tools I would use:
+- For the voting system, I would use a strategy design pattern as it requires choosing a specific implementation of an algorithm or task at run time – out of multiple other implementations for the same task.
+- For the website design, I would use React JS. React JS is a JavaScript library for building user interfaces.
+   - I would use React because it is all about splitting an application into small building blocks, where every building block, every component, has a clear task and therefore one's code stays maintainable and manageable.
+- I would use the Django python web framework.
+   - I would use Django as it is well known to be a high-performing web framework out of the box and it is used by extremely high-traffic apps. This framework would help deal with the issue of a lot of users attempting to cast a vote at the same time.
 
 #### 5. What's the software development cycle?
 
