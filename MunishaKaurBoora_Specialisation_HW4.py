@@ -50,11 +50,11 @@ print(search_in_matrix(matrix, target))
 """
 Explanation for the code above:
 - Ive used the search_in_matrix function provided as a template for my code.
-- Within the function, I've created a for loop and used the enumerate function with the for loop to print out each value of the list with a counter. 
+- Within the function, I've created a for loop and used the enumerate function with the for loop to obtain a counter with each element of the list. 
    - In this case, the counter is the index number of each element in the list.
 - I've then used an if statement to determine whether or not the target number is within each element, sublist, of the overall list stored within the matrix variable.  
    - If the target number is within a sublist, I obtain the index number on the target integer. This index number would be stored in the column variable.
    - Finally, the the row and column indices of the target integer would be returned.
-- If the target number is not found, [-1, -1] would be returned.
+- If the target number is not found, [-1, -1] would be returned instead.
 """
 
