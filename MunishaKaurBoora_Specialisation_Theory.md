@@ -340,8 +340,9 @@ Explanation for the code above:
 - At the end of this loop, one of the halves may not have been traversed completely. Its values are simply assigned to the remaining slots in the list.
 
 #### 9. Generators - Generator functions allow you to declare a function that behaves like an iterator, i.e. it can be used in a for loop. What is a use case?
-
-An example of how to use a generator:
+- Python provides a generator to create your own iterator function. 
+- A generator is a special type of function which does not return a single value, instead, it returns an iterator object with a sequence of values. 
+- In a generator function, a yield statement is utilised rather than the usual return statement. The yield statement returns a value and pauses the execution while maintaining the internal states.
 
 - Example 1:
 ```commandline
@@ -357,9 +358,11 @@ my_iter = powers_of_four(5)
 for i in my_iter:
     print(i)
 ```
-
 Explanation for the code above:
-- hhh
+- In the above example, the powers_of_four() function is a generator function. 
+- It uses yield instead of the return keyword, thereby returning the value against the yield keyword each time it is called.
+- Above, I've used a for loop to traverse the elements of the generator. In this case, the next() function is called implicitly and the StopIteration is also automatically taken care of.
+
 
  - Example 2:
 ```commandline
@@ -374,12 +377,11 @@ generator = print_elements(4)
 
 for i in generator:
     print(i)
-
 ```
-
 Explanation for the code above:
-
-- hhh
+- In the above example, the print_elements() function is a generator function. 
+- It uses yield instead of the return keyword, thereby returning the value against the yield keyword each time it is called.
+- Above, I've used a for loop to traverse the elements of the generator. In this case, the next() function is called implicitly and the StopIteration is also automatically taken care of.
 
 #### 10. Decorators - A page for useful (or potentially abusive?) decorator ideas. What is the return type of the decorator?
 - A decorator is a function that accepts a function and returns a function i.e. the return value of a decorator function must be the function used to wrap the function to be decorated. 
