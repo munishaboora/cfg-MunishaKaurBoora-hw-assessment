@@ -433,7 +433,7 @@ Explanation for the code above:
    - Python will take the returned function and call it at decoration time, passing the function to be decorated.
    - As a decorator returns a function, a decorator does not have a specific return type. 
 
-- Using decorators is beneficial because they're reusable and they can be used on classes, (amongst other uses).
+- Using decorators is beneficial because they're reusable, they can be used on classes, they can be used to check if a user is logged in, etc.
 1. As a decorator is just a regular Python function, all the usual tools for easy reusability are available. 
 ```commandline
 def do_twice(func):
@@ -483,4 +483,27 @@ class TimeWaster:
     tw = TimeWaster(1000)
     tw.waste_time(999)
             
+```
+
+3. Decorators can be used when working with a web framework. 
+   - Below, Flask is being used to set up a /secret web page that should only be visible to users that are logged in or otherwise authenticated.
+
+```commandline
+from flask import Flask, g, request, redirect, url_for
+import functools
+app = Flask(__name__)
+
+def login_required(func):
+    """Make sure user is logged in before proceeding"""
+    @functools.wraps(func)
+    def wrapper_login_required(*args, **kwargs):
+        if g.user is None:
+            return redirect(url_for("login", next=request.url))
+        return func(*args, **kwargs)
+    return wrapper_login_required
+
+@app.route("/secret")
+@login_required
+def secret():
+    ...
 ```
