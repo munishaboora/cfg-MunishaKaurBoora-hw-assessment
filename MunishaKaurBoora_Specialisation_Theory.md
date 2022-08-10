@@ -28,12 +28,13 @@
         - In Object-Oriented Programming, the program is divided into small parts, referred to as objects.
         - In Process Oriented Programming, the program is divided into small parts, referred to as functions.
 
+
 #### 2. What's polymorphism in OOP?
 
 - Polymorphism is the condition of occurrence in different forms. 
 - Polymorphism refers to the use of a single type entity (method, operator or object) to represent different types in different scenarios.
 - Polymorphism is a concept in Python programming wherein an object defined in Python can be used in different ways.
-- Polymorphism allows the programmer to define multiple methods in a derived class, and it has the same name as present in the parent class.
+- Polymorphism allows the programmer to define multiple methods in a derived class which have the same name as present in the parent class.
 - Such scenarios support method overloading in Python.
 
 - Example 1:
@@ -56,7 +57,7 @@ object_giraffe.diet()
 ```
 Explanation for the code above:
 - Above, I've created two new classes: Lion and Giraffe.
-- The outputs from this program are carnivore and herbivore, respectively. 
+- The outputs from this program are 'carnivore' and 'herbivore', respectively. 
 - The two classes both use the method name diet, but they define the methods differently. 
 - An object instantiated from the Lion class will use the method as it is defined in that class. 
 - The Giraffe class may have a method with the same name, but objects instantiated from the Lion class won’t interact with it.
@@ -97,6 +98,7 @@ Explanation for the code above:
 - Polymorphism allows us to access these overridden methods and attributes that have the same name as the parent class.
 - Above, I have overridden the print_vehicle_details method from the parent class, VehicleDetails. 
 
+
 #### 3. What's inheritance in OOP?
 
 - Inheritance is the process by which one class takes on the attributes and methods of another. 
@@ -136,31 +138,32 @@ Explanation for the code above:
 - The code above is an example of multiple inheritance as the parent class, VehicleDetails, inherits to multiple child classes, Cycle and Car.
 - The Cycle and Car child classes take on the attributes and methods of the parent class, VehicleDetails.
 - The child classes, Cycle and Car, are derived from the parent class, VehicleDetails.
-- The child classes, Cycle and Car, extend the attributes of the parent class. For instance both classes use the brand, colour and model.
+- The child classes, Cycle and Car, extend the attributes of the parent class. For instance both classes use the brand, colour and model attributes.
 - The child classes inherit the parent class' attributes but can also specify methods that are unique to themselves. For instance, the Cycle class specifies the print_cycle_details method and the Car class specifies the print_car_details method.
+
 
 #### 4. If you had to make a program that could vote for the top three funniest people in the office, how would you do that? How would you make it possible to vote on those people?
 To make a program that could vote for the top three funniest people in the office, I would start by creating some user stories, for instance:
-- As an employee working in the office, I want to be able to check who the funniest people in the office are, so that I know if I am considered to be funny.
-- As a manager in the office, I want to be able to analyse the overall votes, so that I know which individuals to award a prize to.
+   - As an employee working in the office, I want to be able to check who the funniest people in the office are, so that I know if I am considered to be funny.
+   - As a manager in the office, I want to be able to analyse the overall votes, so that I know which individuals to award prizes to for their comedy skills.
 
 - The first user story above essentially requires the ability for an employee to be able to check the cumulative votes. 
 - The second user story above requires the office manager to be able to use the overall votes to reward employees. 
 
-- As one can start writing the code for the backend or the frontend of a software in any order, all tasks above can be completed simultaneously, by three separate individuals in the development team.
+- As one can start writing the code for the backend or the frontend of a software in any order, all tasks required to create a program can be completed simultaneously, by separate individuals in the development team.
 
 - To build a simple prototype of a program that could vote for the top three funniest people in the office, I would follow the agile methodology because it helps analyse and improve products whilst they’re going through different phases of development. 
    - This methodology enables one to produce more valuable products for customers by following an incremental approach.
    
-- Each sprint would last two weeks. A sprint is a short period of time when a scrum team works to complete a set amount of work.
+- Each sprint would last one to four weeks. A sprint is a short period of time when a scrum team works to complete a set amount of work.
 - Each sprint would start with a sprint planning meeting - this would be conducted before every sprint and would be attended by the scrum master, the development team and the product owner. 
    - These individuals would all select the high priority items from the product backlog in such a way that the development team can deliver them in one single sprint. 
-      - The list of selected items is known as the sprint backlog. The development team works on the sprint backlog throughout the sprint.
-- During the sprint, every day, a daily scrum meeting is held. In this meeting each participant would answer 3 questions: what they did yesterday, what they'll do today, and the issues facing the developers.
-- The outcome of the sprint would be a potentially shippable product. Whether or not the product is ready to be shipped depends on whether the product owner wants to ship the product or add more features to the product.
-- Finally, after the sprint has taken place, the sprint review and sprint retrospective occur.
+      - The list of selected items is known as the sprint backlog. The development team would work on the sprint backlog throughout the sprint.
+- During the sprint, every day, a daily scrum meeting would be held. In this meeting each participant would answer 3 questions: what they did yesterday, what they'll do today, and the issues facing the developers.
+- The outcome of the sprint would be a potentially shippable product. Whether the product is ready to be shipped depends on whether the product owner wants to ship the product or add more features to the product.
+- Finally, after the sprint has taken place, the sprint review and sprint retrospective would occur.
    - In the sprint review, the scrum team would showcase what it has accomplished during the sprint - this may include a demo of new features added to the product.
-   - In the sprint retrospective, the team contemplate on what went well, what went badly and what could be improved. The objective of a sprint retrospective is to improve the sprints held in the future.
+   - In the sprint retrospective, the team contemplate on what went well, what went badly and what could be improved. The objective of a sprint retrospective would be to improve the sprints held in the future.
 
 - I would make a program that could vote for the top three funniest people in the office with the help of a class as shown below.
    - Below, to cast a vote, the vote_for_a_person method would be called and passed a name.
@@ -216,32 +219,30 @@ Main considerations:
 - The options available for storing the data e.g Informix, MySQL, MongoDB, etc.
 - How the booking system would deal with multiple people attempting to vote (as would be the case when voting for a popular individual).
 - What will the UI look like?
-- Do we need to support both web apps and mobile apps?
+- Do we need to support both web apps and mobile applications?
 
 Common or biggest problems:
 - Individuals not receiving confirmation of their vote being cast.
 - Users accidentally voting for the wrong person or accidentally misspelling something.
-- Users not wanting to use the website because they don’t like the user interface or it is too difficult to navigate.
+- Users not wanting to use the website because they don’t like the user interface or because it is too difficult to navigate.
 - The website taking a long time to load, leading to the user becoming frustrated.
 - How many options should be displayed to the user when casting a vote (a lot of options would be hard to display and may overwhelm the user).
 
 Components or tools I would use:
 - For the voting system, I would use a strategy design pattern as it requires choosing a specific implementation of an algorithm or task at run time – out of multiple other implementations for the same task.
 - For the website design, I would use React JS. React JS is a JavaScript library for building user interfaces.
-   - I would use React because it is all about splitting an application into small building blocks, where every building block, every component, has a clear task and therefore one's code stays maintainable and manageable.
+   - I would use React JS because it is all about splitting an application into small building blocks, where every building block, every component, has a clear task and therefore one's code stays maintainable and manageable.
 - I would use the Django python web framework.
    - I would use Django as it is well known to be a high-performing web framework out of the box and it is used by extremely high-traffic apps. This framework would help deal with the issue of a lot of users attempting to cast a vote at the same time.
 
 #### 5. What's the software development cycle?
 
-- The software development cycle involves the application of standard business practices to the building of software
-  applications.
-- The software development cycle is typically broken down into the following steps: Planning, Requirements, Design,
-  Implementation, Testing and Integration, Deploy, and Maintenance.
+- The software development cycle involves the application of standard business practices to the building of software applications.
+- The software development cycle is typically broken down into the following steps: Planning, Requirements, Design, Implementation, Testing and Integration, Deploy, and Maintenance.
     - Planning: 
        - Leaders of the project evaluate the terms of the project, including the calculation of labour and material costs to create a timetable with goals. 
        - Planning would also include areas of feedback from stakeholders or anybody who is going to benefit from the application itself. 
-       - At this stage, the scope of the project would be clearly defined, the purpose of the application would be outlined and the boundaries that are needed to keep the project from expanding beyond scope or shifting would be set.
+       - At this stage, the scope of the project would be clearly defined, the purpose of the application would be outlined, and the boundaries that are needed to keep the project from expanding beyond scope or shifting would be set.
     - Requirements: 
        - At this stage, requirements would be defined and documented and stakeholder approval would also be sought. 
        - What the application is meant to do, features to be included, and potential roadblocks would be defined. 
@@ -250,16 +251,16 @@ Components or tools I would use:
        - At this step, how the application will work and aspects of the design are modelled. 
        - Some aspects can include: UI, Programming, Security, Architecture, etc.
     - Implementation: 
-       - At this step, the program itself is written out, either using a single developer or a large team - with each working on different parts of the application. 
+       - At this step, the program itself is written out, either using a single developer or a large team - with each most likely working on different parts of the application. 
     - Testing and Integration: 
        - In this phase, a software implementation is packaged and tested to assure quality. 
-       - Testing or quality assurance ensures the solutions implemented pass the standard for quality and performance. 
+       - Testing or quality assurance ensures the solutions implemented pass the standards for quality and performance. 
        - This can involve unit testing, performing integration and end-to-end tests, and reporting or identifying bugs or defects in the software solution.
     - Deploy: 
        - An application is deployed once testing is completed, making it available to users. 
        - This step of the process can be manual or automated, depending on the complexity and needs of the application.
     - Maintenance: 
-       - Once the application has been deployed and is being used, the final phase discovers bugs that slipped through the cracks during testing and resolves them - this can spawn new development cycles.
+       - Once the application has been deployed and is being used, the final phase discovers bugs that slipped through the cracks during testing and resolves them - this itself can spawn new development cycles.
 
 #### 6. What's the difference between agile and waterfall?
 - Agile methodology is an approach to software development that helps the continuous iteration of development and testing in the software development process. 
@@ -276,7 +277,7 @@ Components or tools I would use:
     - Changes to requirements 
         - Agile: has a flexible method which allows changes to be made to the project development requirements - even if the initial planning has been completed.
         - Waterfall: there is no scope to change the requirements once the project development starts.
-    - Development approach
+    - The development approach
         - Agile: follows an iterative development approach, due to which the planning, development, prototyping and other software development phases may appear more than once.
         - Waterfall: the project development phases such as designing, development, testing, are completed once in the Waterfall model.
     - Requirements preparation
@@ -310,7 +311,7 @@ print(result)
 Explanation for the code above:
 - Above, I've imported reduce from the functools module so that I can later use the reduce function.
 - I've created a variable called numbers and stored a list in it.
-- I've also created a function, sum_up, which sums up two inputs.
+- I've also created a function, sum_up, which sums up the two inputs passed to the function.
 - I've passed sum_up and numbers to a reduce function and stored the result in the variable result.
 - The value stored in result is printed to the console using the print function.
 
@@ -434,6 +435,7 @@ Explanation for the code above:
    - As a decorator returns a function, a decorator does not have a specific return type. 
 
 - Using decorators is beneficial because they're reusable, they can be used on classes, they can be used to check if a user is logged in, etc.
+
 1. As a decorator is just a regular Python function, all the usual tools for easy reusability are available. 
 ```commandline
 def do_twice(func):
@@ -480,14 +482,13 @@ class TimeWaster:
         for _ in range(num_times):
             sum([i**2 for i in range(self.max_num)])
     
-    tw = TimeWaster(1000)
-    tw.waste_time(999)
+tw = TimeWaster(1000)
+tw.waste_time(999)
             
 ```
 
 3. Decorators can be used when working with a web framework. 
    - Below, Flask is being used to set up a /secret web page that should only be visible to users that are logged in or otherwise authenticated.
-
 ```commandline
 from flask import Flask, g, request, redirect, url_for
 import functools
