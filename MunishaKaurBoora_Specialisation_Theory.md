@@ -433,4 +433,54 @@ Explanation for the code above:
    - Python will take the returned function and call it at decoration time, passing the function to be decorated.
    - As a decorator returns a function, a decorator does not have a specific return type. 
 
-- list 2 good ideas of decorators and 2 bad??
+- Using decorators is beneficial because they're reusable and they can be used on classes, (amongst other uses).
+1. As a decorator is just a regular Python function, all the usual tools for easy reusability are available. 
+```commandline
+def do_twice(func):
+    def wrapper_do_twice():
+        func()
+        func()
+
+    return wrapper_do_twice
+
+
+@do_twice
+def say_hello():
+    print("Hello!")
+
+
+@do_twice
+def say_bye():
+    print("Bye!")
+
+say_hello()
+say_bye()
+```
+- When running the above example, the say_hello() function is executed twice and so is the say_bye() function. 
+- 'Hello!' is outputted to the console twice, followed by 'Bye!' being outputted to the console twice too. 
+- As shown above, the do_twice decorator can be used again and again. 
+
+2. decorators can be used to decorate the methods of a class. 
+   - Some commonly used decorators that are even built-ins in Python are @classmethod, @staticmethod, and @property. 
+   - The @classmethod and @staticmethod decorators are used to define methods inside a class namespace that are not connected to a particular instance of that class. 
+   - The @property decorator is used to customize getters and setters for class attributes. 
+
+- Suppose we have two decorators, already created, called debug and timer, as below.
+- Below is an example of how a decorator can be used on the method of a class, thereby changing the behaviour of the method when it is called.
+```commandline
+from decorators import debug, timer
+
+class TimeWaster:
+    @debug
+    def __init__(self, max_num):
+        self.max_num = max_num
+
+    @timer
+    def waste_time(self, num_times):
+        for _ in range(num_times):
+            sum([i**2 for i in range(self.max_num)])
+    
+    tw = TimeWaster(1000)
+    tw.waste_time(999)
+            
+```
