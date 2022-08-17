@@ -101,7 +101,7 @@ def even_fibonacci_sum(limit):
     if limit == 1 or limit == 2:
         return 1
     else:
-        return even_fibonacci_sum(limit-1) + even_fibonacci_sum(limit-3)
+        return even_fibonacci_sum(limit-1) + even_fibonacci_sum(limit-2)
 
 ##### TESTS ####
 
